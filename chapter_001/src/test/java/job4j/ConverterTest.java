@@ -1,4 +1,4 @@
-package ru.job4j;
+package job4j;
 
 import job4j.Converter;
 import org.junit.Assert;

@@ -1,5 +1,9 @@
 package job4j;
 
+/**
+ *
+ */
+
 public class Calculator {
 
     public static void plus (int one, int two) {

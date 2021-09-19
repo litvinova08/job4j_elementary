@@ -1,5 +1,8 @@
 package job4j.array;
 
+/**
+ * @param
+ */
 public class ArrayDefinition {
     public static void main(String[] args) {
         String[] names = new String[4];
