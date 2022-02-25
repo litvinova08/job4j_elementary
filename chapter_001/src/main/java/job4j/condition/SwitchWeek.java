@@ -3,24 +3,16 @@ package job4j.condition;
 public class SwitchWeek {
     public static String nameOfDay(int day) {
         String name;
-        switch (day) {
-            case 1:
-                return name = "Monday";
-            case 2:
-                return name = "Tuesday";
-            case 3:
-                return name = "Wednesday";
-            case 4:
-                return name = "Thursday";
-            case 5:
-                return name = "Friday";
-            case 6:
-                return name = "Saturday";
-            case 7:
-                return name = "Sunday";
-            default:
-                return name = "Not found";
-        }
+        return switch (day) {
+            case 1 -> name = "Monday";
+            case 2 -> name = "Tuesday";
+            case 3 -> name = "Wednesday";
+            case 4 -> name = "Thursday";
+            case 5 -> name = "Friday";
+            case 6 -> name = "Saturday";
+            case 7 -> name = "Sunday";
+            default -> name = "Not found";
+        };
     }
 
     public static void main(String[] args) {
