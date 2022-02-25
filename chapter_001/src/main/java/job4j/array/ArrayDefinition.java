@@ -1,18 +1,12 @@
 package job4j.array;
 
-/**
- * @param
- */
 public class ArrayDefinition {
     public static void main(String[] args) {
-        String[] names = new String[4];
-        names[0] = "Rita";
-        names[1] = "Sasha";
-        names[2] = "Dima";
-        names[3] = "Mama";
-
-        for (int in = 0; in < names.length; in++) {
-            System.out.println(names[in]);
-        }
+        short[] ages = new short[10];
+        String[] surnames = new String[100500];
+        float[] prices = new float[40];
+        System.out.println("Ages length is " + ages.length);
+        System.out.println("Surnames length is " + surnames.length);
+        System.out.println("Prices length is " + prices.length);
     }
 }
