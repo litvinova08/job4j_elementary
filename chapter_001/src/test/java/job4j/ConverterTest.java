@@ -1,15 +1,16 @@
 package job4j;
 
-import job4j.Converter;
 import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class ConverterTest {
 
     @Test
-    public void whenConvert140RblThen2Euro() {
-        int in = 300;
-        int expected = 6;
+    public void whenRuble140ThenEuro2() {
+        int in = 140;
+        int expected = 2;
         int out = Converter.rubleToEuro(in);
         Assert.assertEquals(expected, out);
     }
@@ -17,8 +18,8 @@ public class ConverterTest {
     @Test
     public void rubleToDollar() {
         int in = 300;
-        int exp = 5;
+        int ext = 5;
         int out = Converter.rubleToDollar(in);
-        Assert.assertEquals(exp, out);
+        Assert.assertEquals(out, ext);
     }
 }
