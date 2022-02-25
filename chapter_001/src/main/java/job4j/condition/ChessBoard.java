@@ -5,7 +5,7 @@ public class ChessBoard {
         int rsl = 0;
         if (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)) {
-            if (Math.abs(x1-x2) - Math.abs(y1 - y2) == 0) { // проверка, что фигура идет именно по диагонали
+            if (Math.abs(x1-x2) - Math.abs(y1 - y2) == 0) {
                 rsl = Math.abs(x1 - x2);
             }
         }
