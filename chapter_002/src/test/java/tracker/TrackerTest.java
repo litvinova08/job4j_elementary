@@ -1,4 +1,4 @@
-package traker;
+package tracker;
 
 import org.junit.Test;
 
