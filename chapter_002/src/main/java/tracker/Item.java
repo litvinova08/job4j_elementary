@@ -1,12 +1,23 @@
 package tracker;
 
-import java.time.LocalDateTime;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 public class Item {
 
     private final LocalDateTime created = LocalDateTime.now();
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
     private int id;
     private String name;
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "created=" + created.format(FORMATTER) +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
     public Item(String name) {
         this.name = name;
