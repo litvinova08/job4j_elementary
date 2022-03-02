@@ -6,15 +6,19 @@ public class Calculator {
     public static int sum(int y) {
         return x + y;
     }
+
     public static int minus(int y) {
         return y - x;
     }
+
     public int divide(int y) {
         return y / x;
     }
+
     public int multiply(int a) {
         return x * a;
     }
+
     public int sumAllOperation(int y) {
         return sum(y) + multiply(y) + minus(y) + divide(y);
     }

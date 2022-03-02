@@ -42,7 +42,7 @@ public class Tracker {
                 countWithKeyNames++;
             }
         }
-        return withKeyNames = Arrays.copyOf(withKeyNames, countWithKeyNames);
+        return Arrays.copyOf(withKeyNames, countWithKeyNames);
     }
 
     public boolean replace(int id, Item item) {

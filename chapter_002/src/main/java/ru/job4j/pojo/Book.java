@@ -6,10 +6,11 @@ public class Book {
     private String name;
     private int pages;
 
-    public Book (String name, int pages) {
+    public Book(String name, int pages) {
         this.name = name;
         this.pages = pages;
     }
+
     public String getName() {
         return name;
     }
@@ -28,8 +29,12 @@ public class Book {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass())  {
+            return false;
+        }
         Book book = (Book) o;
         return pages == book.pages && Objects.equals(name, book.name);
     }
