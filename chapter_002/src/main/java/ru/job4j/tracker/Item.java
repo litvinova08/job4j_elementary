@@ -1,4 +1,4 @@
-package tracker;
+package ru.job4j.tracker;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
