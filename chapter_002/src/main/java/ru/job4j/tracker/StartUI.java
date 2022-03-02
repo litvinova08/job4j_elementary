@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 public class StartUI {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Tracker tracker = new Tracker();
         tracker.add(new Item("first"));
         tracker.add(new Item("second"));
@@ -22,5 +23,11 @@ public class StartUI {
         System.out.println("9. toString [#310018]");
         Item item = new Item("Task #310018");
         System.out.println(item);
+=======
+        Item item = new Item("test item");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String dateTimeFormat = item.getCreated().format(formatter);
+        System.out.println(dateTimeFormat);
+>>>>>>> origin/master
     }
 }
