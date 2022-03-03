@@ -40,6 +40,15 @@ public class StartUI {
                 } else {
                     System.out.println("Replacement cannot be completed. Id does not exist");
                 }
+            } else if (select == 3) {
+                System.out.println("==Delete item==");
+                System.out.println("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                if (tracker.delete(id)) {
+                    System.out.println("Item successfully deleted");
+                } else {
+                    System.out.println("Item cannot be deleted. Check id");
+                }
             } else if (select == 6) {
                 run = false;
             }
