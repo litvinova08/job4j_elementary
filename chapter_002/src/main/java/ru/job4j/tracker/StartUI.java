@@ -47,7 +47,7 @@ public class StartUI {
                 if (tracker.delete(id)) {
                     System.out.println("Item successfully deleted");
                 } else {
-                    System.out.println("Item cannot be deleted. Check id" + id);
+                    System.out.println("Item cannot be deleted. Check id " + id);
                 }
             } else if (select == 4) {
                 System.out.println("==Find item by id");
@@ -57,7 +57,19 @@ public class StartUI {
                 if (item != null) {
                     System.out.println(item);
                 } else {
-                    System.out.println("Item not found. Check id" + id);
+                    System.out.println("Item not found. Check id " + id);
+                }
+            } else if (select == 5) {
+                System.out.println("==Find items by name==");
+                System.out.println("Enter item name: ");
+                String name = scanner.nextLine();
+                Item[] items = tracker.findByName(name);
+                if (items.length > 0) {
+                    for (Item item : items) {
+                        System.out.println(item);
+                    }
+                } else {
+                    System.out.println("Item with the name " + name + " not found");
                 }
             } else if (select == 6) {
                 run = false;
