@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.first;
 
 public class MyName {
     public static void main(String[] args) {
