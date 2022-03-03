@@ -27,15 +27,28 @@ public class StartUI {
                 } else  {
                     System.out.println("Tracker has no items");
                 }
+            }
+            if (select == 2) {
+                System.out.println("==Replace item==");
+                System.out.println("Enter id ");
+                int id = Integer.parseInt(scanner.nextLine());
+                System.out.println("Enter item name: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                if (tracker.replace(id, item)) {
+                    System.out.println("Replacement completed successfully");
+                } else {
+                    System.out.println("Replacement cannot be completed. Id does not exist");
+                }
             } else if (select == 6) {
-            run = false;
+                run = false;
             }
         }
     }
 
     private void showMenu() {
         String[] menu = {
-                "Add new Item", "Show all items", "Edit item",
+                "Add new Item", "Show all items", "Relace item",
                 "Delete item", "Find item by id", "Find items by name",
                 "Exit Program"
         };
