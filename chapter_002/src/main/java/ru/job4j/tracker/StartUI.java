@@ -47,7 +47,17 @@ public class StartUI {
                 if (tracker.delete(id)) {
                     System.out.println("Item successfully deleted");
                 } else {
-                    System.out.println("Item cannot be deleted. Check id");
+                    System.out.println("Item cannot be deleted. Check id" + id);
+                }
+            } else if (select == 4) {
+                System.out.println("==Find item by id");
+                System.out.println("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                Item item = tracker.findById(id);
+                if (item != null) {
+                    System.out.println(item);
+                } else {
+                    System.out.println("Item not found. Check id" + id);
                 }
             } else if (select == 6) {
                 run = false;
@@ -57,7 +67,7 @@ public class StartUI {
 
     private void showMenu() {
         String[] menu = {
-                "Add new Item", "Show all items", "Relace item",
+                "Add new Item", "Show all items", "Replace item",
                 "Delete item", "Find item by id", "Find items by name",
                 "Exit Program"
         };
