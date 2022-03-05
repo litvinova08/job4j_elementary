@@ -24,11 +24,10 @@ public class StartUI {
                     for (Item item : items) {
                         System.out.println(item);
                     }
-                } else  {
+                } else {
                     System.out.println("Tracker has no items");
                 }
-            }
-            if (select == 2) {
+            } else if (select == 2) {
                 System.out.println("==Replace item==");
                 System.out.print("Enter id ");
                 int id = Integer.parseInt(scanner.nextLine());
