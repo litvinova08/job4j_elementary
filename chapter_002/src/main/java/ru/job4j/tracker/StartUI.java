@@ -11,7 +11,7 @@ public class StartUI {
             System.out.print("Select: ");
             int select = Integer.parseInt(scanner.nextLine());
             if (select == 0) {
-                System.out.println("==Create anew item==");
+                System.out.println("==Create a new item==");
                 System.out.print("Enter item name: ");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
@@ -29,7 +29,7 @@ public class StartUI {
                 }
             } else if (select == 2) {
                 System.out.println("==Replace item==");
-                System.out.print("Enter id ");
+                System.out.print("Enter ID ");
                 int id = Integer.parseInt(scanner.nextLine());
                 System.out.print("Enter item name: ");
                 String name = scanner.nextLine();
